@@ -1,0 +1,1 @@
+const document = document.getElementsByClassName('giant-div');
