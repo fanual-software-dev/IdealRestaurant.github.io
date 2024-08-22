@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./albums/Savour-Vintage3.png">
     <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
     <div class="full-div">
@@ -62,7 +64,7 @@
         </div>
 
         
-        <form class="form" id="form" action="/action_page.php" onsubmit="return Submit_Form()" method="post">
+        <form class="form" id="form" action="https://formsubmit.co/ed2279e0ca4115d5bc134a598230ecb8" method="POST">
             <fieldset class="fieldset">
                 <!-- <legend>Feedback Form</legend> -->
                     <p style="color: rgb(5, 52, 94); font-size: 32px; font-family: Poppins; font-weight: bold;">Contact-Us</p>
@@ -75,7 +77,13 @@
                 <div class="form-group-contact">
                     <!-- <label class="input1" for="">Email :</label> -->
                     <input type="email" name="email" id="email" placeholder="Type your email" required>
+                </div><br>
+                <div class="form-group-contact">
+                    <!-- <label class="input1" for="">Email :</label> -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
                 </div>
+
                 <br>
                 <div class="form-group-contact">
                     <textarea name="textarea" id="textarea" required placeholder="Write your feedback here..."></textarea>
