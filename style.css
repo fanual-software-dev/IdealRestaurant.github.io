@@ -1088,6 +1088,13 @@ textarea::placeholder{
     /* margin-right: 10%; */
 }
 
+.fieldset p{
+    color: rgb(5, 52, 94);
+    font-size: 32px; 
+    font-family: Poppins; 
+    font-weight: bold;
+}
+
 .contact-p{
     width: 90%;
     font-size: 24px;
@@ -1373,6 +1380,7 @@ textarea::placeholder{
     }
 
     .about-div{
+        display: none;
         width: 100%;
         height: 300px;
     }
@@ -1399,6 +1407,74 @@ textarea::placeholder{
         color: orangered;
         font-size: 24px;
     }
+
+    /* table{
+        width: 100%;
+    } */
+    
+
+    .td1, .td11 ,.td2, .td21{
+        font-size: 8px;
+    }
+
+    .td11-image{
+       display: none;
+    }
+
+    .reservation-div{
+        padding: 0px;
+    }
+    .reservation-image{
+        display: none;
+    }
+    .form-p{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    fieldset{
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .form-group{
+        width: 100%;
+    }
+
+    .contact-div{
+        flex-direction: column-reverse;
+    }
+
+    .contact-div1{
+        width: 100%;
+    }
+
+    .form{
+        width: 100%;
+    }
+
+    .fieldset{
+        width: 100%;
+    }
+
+    .fieldset p{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .contact-div1{
+        gap: 20px;
+    }
+
+    .contact-p{
+        margin-bottom: 30px;
+    }
+
+
 
 
     
