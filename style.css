@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    
 }
 
 body {
@@ -146,18 +146,10 @@ main {
         transform: rotate(360deg);
     }
 
-    25%{
-        
-        transform: translateX(50%);
-    }
-
     50%{
         transform: translateX(100%);
     }
 
-    75%{
-        transform: translateX(50%);
-    }
 
     100%{
         transform: translateX(0%);
@@ -166,6 +158,7 @@ main {
 
 .Logo{
     width: 100%;
+    overflow-x: hidden;
     height: 150px;
     /* margin-left: 35%; */
     margin-bottom: 80px;
@@ -370,7 +363,7 @@ ul {
 }
 
 .second-div{
-    border: 2px solid white;
+    /* border: 2px solid white; */
     width: 100%;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -436,11 +429,6 @@ footer {
     padding-top: 2%;
 }
 
-.about-footer{
-    width: 60%;
-    
-
-}
 
 .image-div{
     display: flex;
@@ -546,6 +534,7 @@ footer {
 }
 
 .about-aside-div{
+    width: 100%;
     display: flex;
     padding-top: 0px;
     gap: 40px;
@@ -655,6 +644,8 @@ footer {
     /* border: 2px solid; */
     /* height: 20px; */
 }
+
+
 
 .savour-div-about{
     display: flex;
@@ -1129,6 +1120,9 @@ textarea::placeholder{
 
 @media screen and (max-width:450px) {
 
+    *{
+        overflow-x: hidden;
+    }
     .giant-div{
         display: flex;
         flex-direction: column;
@@ -1150,7 +1144,7 @@ textarea::placeholder{
         
     }
     .menu-nav-bar{
-        width: 70%;
+        width: 100%;
     }
 
     nav{
@@ -1167,7 +1161,7 @@ textarea::placeholder{
     }
 
     a{
-        font-size: 10px;
+        font-size: 12px;
         font-weight: normal;
     }
     .logo-animation{
@@ -1191,17 +1185,20 @@ textarea::placeholder{
     .savour-div{
         justify-content: start;
         gap: 10px;
-        padding-left: 10px;
+        padding-left: 3%;
+        
     }
     .logo-image-home{
         width: 30px;
         height: 30px;
     }
     .main{
+        border-radius: none;
         width: 100%;
     
     }
     main{
+        overflow-y: hidden;
         width: 100%;
         justify-content: center;
         height: 250px;
@@ -1220,9 +1217,9 @@ textarea::placeholder{
     }
     
     .logo-text1{
-        text-shadow: none;
-        color: rgb(149, 224, 0);
-        font-size: 12px;
+        text-shadow: 2px 2px 4px rgb(255, 255, 255);
+        color: orangered;
+        font-size: 16px;
         font-weight: bold;
         font-family: cursive;
         animation-name: example;
@@ -1233,13 +1230,14 @@ textarea::placeholder{
     
     .logo-span{
         text-align: end;
-        font-size: 20px;
+        font-size: 32px;
     }
     
     .main-span2{
         width: 35%;
         text-align: center;
-        font-size: 12px;
+        font-size: 11px;
+        font-weight: normal;
         text-transform: capitalize;
         color: rgb(255, 255, 255);
         
@@ -1256,13 +1254,15 @@ textarea::placeholder{
     }
 
     .specials{
-        width: 85%;
+        width: 90%;
         font-size: 14px;
+        font-weight: bold;
         margin-left: 0;
+        background-color: rgb(9, 100, 191);
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        border-bottom-right-radius: 20px;
-        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
     }
 
     .menu-footer-logo{
@@ -1283,8 +1283,9 @@ textarea::placeholder{
     .second-div{
         margin-top: 0px;
         width: 100%;
-        grid-template-columns: 40% 40%;
+        grid-template-columns: auto auto;
         justify-content: center;
+        margin-left: 5%;
     }
 
    
@@ -1295,19 +1296,22 @@ textarea::placeholder{
 
     .p1{
         margin-top: 15px;
-        font-size: 11px;
-        width: 95%;
+        font-size: 10.5px;
+        width: 90%;
         color: aliceblue;
         
     }
 
     footer{
+        width: 100%;
         gap: 10px;
+       
     }
 
     .about-footer-div{
         width: 100%;
-        gap: 5px;
+        gap: 2%;
+        justify-content: center;
     }
 
     .copyright,.menu-div{
@@ -1315,7 +1319,85 @@ textarea::placeholder{
     }
 
     .footer-a{
-        font-size: 10px;
+        font-size: 10.5px;
+    }
+
+    .btn-1{
+        width: 90%;
+    }
+
+    .about-footer{
+        height: 40px;
+    }
+
+    .about-aside-div{
+        flex-direction: column;
+    }
+    .about-aside{
+        width: 100%;
+        margin-top: 20px;
+        background-color: rgb(11, 23, 34);
+        background-image: none;
+        border: none;
+        padding-top: 0px;
+        height: 950px;
+    }
+
+    .aside-div{
+        display: none;
+    }
+    .aside-main-paragraph{
+        width: 97%;
+    }
+
+    .div-grid img{
+        width: 190px;
+        height: 150px;
+    }
+
+    .container{
+        width: 100%;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 49% 49%;
+        justify-content: center;
+        row-gap: 10px;
+        column-gap: 10px;
+        padding-right: 0px;
+    }
+
+    .grid-text{
+        padding-top: 20px;
+        padding-left: 10px;
+        width: 90%;
+    }
+
+    .about-div{
+        width: 100%;
+        height: 300px;
+    }
+    .savour-div-about{
+        width: 100%;
+        height: 100px;
+        gap: 5%
+    }
+
+    .savour-div-about img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .about-logo-text{
+        text-shadow: none;
+        color: orangered;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .about-text2{
+        text-shadow: none;
+        color: orangered;
+        font-size: 24px;
     }
 
 
